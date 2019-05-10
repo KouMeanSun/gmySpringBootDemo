@@ -1,0 +1,40 @@
+2019-04-25 15:48:13,981 [background-preinit] [org.hibernate.validator.internal.util.Version.<clinit>(Version.java:21)] - [INFO] HV000001: Hibernate Validator 6.0.16.Final
+2019-04-25 15:48:14,073 [restartedMain] [org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:50)] - [INFO] Starting SpringbootApplication on C02XT0BGJ1GQ with PID 43864 (/Users/gaomingyang499/IdeaProjects/springboot/target/classes started by gaomingyang499 in /Users/gaomingyang499/IdeaProjects/springboot)
+2019-04-25 15:48:14,073 [restartedMain] [org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:675)] - [INFO] No active profile set, falling back to default profiles: default
+2019-04-25 15:48:14,099 [restartedMain] [org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:227)] - [INFO] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-04-25 15:48:14,099 [restartedMain] [org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:227)] - [INFO] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-04-25 15:48:14,524 [restartedMain] [org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:166)] - [WARN] No MyBatis mapper was found in '[com.gmy.springboot]' package. Please check your configuration.
+2019-04-25 15:48:14,535 [restartedMain] [org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:166)] - [WARN] No MyBatis mapper was found in '[com.gmy.springboot]' package. Please check your configuration.
+2019-04-25 15:48:14,562 [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:244)] - [INFO] Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-04-25 15:48:14,563 [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126)] - [INFO] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-04-25 15:48:14,575 [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:182)] - [INFO] Finished Spring Data repository scanning in 4ms. Found 0 repository interfaces.
+2019-04-25 15:48:14,780 [restartedMain] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330)] - [INFO] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1683b236] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-25 15:48:15,012 [restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:90)] - [INFO] Tomcat initialized with port(s): 8080 (http)
+2019-04-25 15:48:15,086 [restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:296)] - [INFO] Root WebApplicationContext: initialization completed in 987 ms
+2019-04-25 15:48:15,310 [restartedMain] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171)] - [INFO] Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-25 15:48:15,368 [restartedMain] [org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists(ThymeleafAutoConfiguration.java:108)] - [WARN] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-04-25 15:48:15,410 [restartedMain] [com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource(DruidDataSourceAutoConfigure.java:56)] - [INFO] Init DruidDataSource
+2019-04-25 15:48:15,435 [restartedMain] [org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:557)] - [WARN] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/alibaba/druid/spring/boot/autoconfigure/DruidDataSourceAutoConfigure.class]: Invocation of init method failed; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2019-04-25 15:48:15,435 [restartedMain] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:208)] - [INFO] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-25 15:48:15,448 [restartedMain] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener.logMessage(ConditionEvaluationReportLoggingListener.java:142)] - [INFO] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-04-25 15:48:15,451 [restartedMain] [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter.report(LoggingFailureAnalysisReporter.java:42)] - [ERROR] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
